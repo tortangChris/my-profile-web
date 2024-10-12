@@ -30,6 +30,9 @@ const Contact = () => {
             <label>Message</label>
             <textarea id="massage" rows="5" value={message} onChange={(e) => inputMessage(e.target.value)} required />
         </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
       </form>
     </div>
   )
