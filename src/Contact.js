@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Contact = () => {
     const [name, inputName] = useState('')
     const [email, inputEmail] = useState('')
     const [message, inputMessage] = useState('')
+    const navigate = useNavigate()
 
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        console.log("Name", name)
-        console.log("Email", email)
-        console.log("Message", message)
+        navigate("/successful", {state: { name, email, message } } )
 
     }
 
