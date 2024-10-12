@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ContactSubmission = () => {
+const SubmissionSuccess = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const ContactSubmission = () => {
   )
 }
 
-export default ContactSubmission
+export default SubmissionSuccess

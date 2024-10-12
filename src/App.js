@@ -4,7 +4,6 @@ import Home from './Home'
 import About from './About'
 import Skills from './Skills'
 import Contact from './Contact'
-import ContactSubmission from './ContactSubmission'
 
 const App = () => {
   return (
@@ -23,7 +22,7 @@ const App = () => {
         <Route path="/about" element={<About />}/>
         <Route path="/skills" element={<Skills />}/>
         <Route path="/contact" element={<Contact />}/>
-        <Route path="/successful" element={<ContactSubmission />}/>
+        <Route path="/successful" element={<SubmissionSuccess />}/>
       </Routes>
     </Router>
   )
