@@ -5,6 +5,7 @@ import About from './About'
 import Skills from './Skills'
 import Contact from './Contact'
 import SubmissionSuccess from './SubmissionSuccess'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const App = () => {
   return (
