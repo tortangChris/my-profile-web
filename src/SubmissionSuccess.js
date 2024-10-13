@@ -6,14 +6,18 @@ const SubmissionSuccess = () => {
   const { name, email, message } = location.state || {};
 
   return (
-    <div>
-      <h1>Thank You,{name}</h1>
-      <p>Your message has been sent successfully!</p>
+    <div className='container mt-5'>
+      <div className='card'>
+        <div className='card-body'>
+          <h1 className='text-center'>Thank You,{name}</h1>
+          <p>Your message has been sent successfully!</p>
 
-      <h5>Submitted Information</h5>
-      <p><strong>Name:</strong> {name} </p>
-      <p><strong>Email:</strong> {email} </p>
-      <p><strong>Message:</strong> {message} </p>
+          <h5>Submitted Information</h5>
+          <p><strong>Name:</strong> {name} </p>
+          <p><strong>Email:</strong> {email} </p>
+          <p><strong>Message:</strong> {message} </p>
+        </div>
+      </div>
     </div>
   )
 }
