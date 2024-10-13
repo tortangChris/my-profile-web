@@ -34,7 +34,7 @@ const Contact = () => {
                 <label htmlFor='message' className='form-label'>Message</label>
                 <textarea id="massage" className='form-control' rows="5" value={message} onChange={(e) => inputMessage(e.target.value)} required />
             </div>
-            <div>
+            <div className="d-flex justify-content-end">
                 <button type="submit" className='btn btn-success'>Submit</button>
               </div>
             </form>
