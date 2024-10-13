@@ -10,7 +10,7 @@ const App = () => {
   return (
     <Router>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <ul className='navbar-nav'>
+        <ul className='navbar-nav mx-auto'>
           <li className='nav-item'>
             <Link className='nav-link' to="/">Home</Link>
             </li>
