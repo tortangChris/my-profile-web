@@ -23,16 +23,16 @@ const Contact = () => {
         <div className='card-body'> 
           <form onSubmit={handleSubmit}>
             <div className='mb-3'>
-                <label htmlFor='name'>Name</label>
-                <input type="text" id="name" value={name} onChange={(e) => inputName(e.target.value)} required />
+                <label htmlFor='name' className='form-label'>Name</label>
+                <input type="text" id="name" className='form-control' value={name} onChange={(e) => inputName(e.target.value)} required />
             </div>
             <div className='mb-3'>
-                <label htmlFor='email'>Email</label>
-                <input type="email" id="email" value={email} onChange={(e) => inputEmail(e.target.value)} required />
+                <label htmlFor='email' className='form-label'>Email</label>
+                <input type="email" id="email" className='form-control' value={email} onChange={(e) => inputEmail(e.target.value)} required />
             </div>
             <div className='mb-3'>
-                <label htmlFor='message'>Message</label>
-                <textarea id="massage" rows="5" value={message} onChange={(e) => inputMessage(e.target.value)} required />
+                <label htmlFor='message' className='form-label'>Message</label>
+                <textarea id="massage" className='form-control' rows="5" value={message} onChange={(e) => inputMessage(e.target.value)} required />
             </div>
             <div>
                 <button type="submit">Submit</button>
