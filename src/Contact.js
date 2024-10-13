@@ -23,15 +23,15 @@ const Contact = () => {
         <div className='card-body'> 
           <form onSubmit={handleSubmit}>
             <div className='mb-3'>
-                <label>Name</label>
+                <label htmlFor='name'>Name</label>
                 <input type="text" id="name" value={name} onChange={(e) => inputName(e.target.value)} required />
             </div>
             <div className='mb-3'>
-                <label>Email</label>
+                <label htmlFor='email'>Email</label>
                 <input type="email" id="email" value={email} onChange={(e) => inputEmail(e.target.value)} required />
             </div>
             <div className='mb-3'>
-                <label>Message</label>
+                <label htmlFor='message'>Message</label>
                 <textarea id="massage" rows="5" value={message} onChange={(e) => inputMessage(e.target.value)} required />
             </div>
             <div>
