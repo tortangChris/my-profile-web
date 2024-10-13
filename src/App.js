@@ -11,16 +11,16 @@ const App = () => {
     <Router>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <ul className='navbar-nav'>
-          <li>
+          <li className='nav-item'>
             <Link className='nav-link' to="/">Home</Link>
             </li>
-          <li>
+          <li className='nav-item'>
             <Link className='nav-link' to="/about">About</Link>
             </li>
-          <li>
+          <li className='nav-item'>
             <Link className='nav-link' to="/skills">Skills</Link>
           </li>
-          <li>
+          <li className='nav-item'>
             <Link className='nav-link' to="/contact">Contact</Link>
           </li>
         </ul>
