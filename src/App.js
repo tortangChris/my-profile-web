@@ -9,12 +9,20 @@ import SubmissionSuccess from './SubmissionSuccess'
 const App = () => {
   return (
     <Router>
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/skills">Skills</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul className='navbar-nav'>
+          <li>
+            <Link className='nav-link' to="/">Home</Link>
+            </li>
+          <li>
+            <Link className='nav-link' to="/about">About</Link>
+            </li>
+          <li>
+            <Link className='nav-link' to="/skills">Skills</Link>
+          </li>
+          <li>
+            <Link className='nav-link' to="/contact">Contact</Link>
+          </li>
         </ul>
       </nav>
       
