@@ -18,7 +18,7 @@ const Contact = () => {
     <div className='container mt-5'>
       <div className='card'>
         <div className='card-header'>
-        <h2>Contact Me</h2>
+        <h2 className='text-center'>Contact Me</h2>
         </div>
         <div className='card-body'> 
           <form onSubmit={handleSubmit}>
