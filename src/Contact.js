@@ -35,7 +35,7 @@ const Contact = () => {
                 <textarea id="massage" className='form-control' rows="5" value={message} onChange={(e) => inputMessage(e.target.value)} required />
             </div>
             <div>
-                <button type="submit">Submit</button>
+                <button type="submit" className='btn btn-success'>Submit</button>
               </div>
             </form>
           </div>
