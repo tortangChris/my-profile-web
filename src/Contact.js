@@ -17,7 +17,7 @@ const Contact = () => {
 
   return (
     <div className='container mt-5'>
-      <div className='card bg-dark text-warning'>
+      <div className='card bg-dark text-warning' style={{ maxWidth: '800px', margin: 'auto' }}>
         <div className='card-header'>
         <h2 className='text-center'>Contact Me</h2>
         </div>
