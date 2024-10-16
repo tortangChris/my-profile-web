@@ -7,7 +7,7 @@ const SubmissionSuccess = () => {
 
   return (
     <div className='container mt-5'>
-      <div className='card'>
+      <div className='card bg-dark text-warning'>
         <div className='card-body'>
           <div className='text-center'>
             <h1 className='text-center'>Thank You, {name}!</h1>

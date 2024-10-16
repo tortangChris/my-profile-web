@@ -17,7 +17,7 @@ const Contact = () => {
 
   return (
     <div className='container mt-5'>
-      <div className='card'>
+      <div className='card bg-dark text-warning'>
         <div className='card-header'>
         <h2 className='text-center'>Contact Me</h2>
         </div>
@@ -36,7 +36,7 @@ const Contact = () => {
                 <textarea id="massage" className='form-control' rows="5" value={message} onChange={(e) => inputMessage(e.target.value)} required />
             </div>
             <div className="d-flex justify-content-end">
-                <button type="submit" className='btn btn-success'>Submit</button>
+                <button type="submit" className='btn btn-warning'>Submit</button>
               </div>
             </form>
           </div>

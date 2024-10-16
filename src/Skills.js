@@ -3,7 +3,7 @@ import React from 'react'
 const Skills = () => {
   return (
     <div className='container mt-5'>
-      <div className='card'>
+      <div className='card bg-dark text-warning'>
         <div className='card-body'>
           <div className='text-center'>
           <h2>My Skills</h2>
