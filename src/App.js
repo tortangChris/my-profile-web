@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import Home from './Home';
 import About from './About';
 import Skills from './Skills';
@@ -20,21 +21,27 @@ const App = () => {
   return (
     <Router>
       <div style={{ backgroundColor: '#000', minHeight: '100vh' }}>
-        <nav className="navbar navbar-expand-lg navbar-dark">
-          <ul className='navbar-nav mx-auto'>
-            {navItems.map(item => (
-              <li className='nav-item' key={item.name}>
-                <Link
-                  className='nav-link'
-                  to={item.path}
-                  onClick={() => setActiveLink(item.name.toLowerCase())}
-                  style={{ borderBottom: activeLink === item.name.toLowerCase() ? '3px solid #FFC107' : 'none' }}>
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+          <Container>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="mx-auto">
+                {navItems.map((item) => (
+                  <Nav.Link
+                    key={item.name}
+                    as={Link}
+                    to={item.path}
+                    onClick={() => setActiveLink(item.name.toLowerCase())}
+                    className={activeLink === item.name.toLowerCase() ? 'active' : ''}
+                    style={{ borderBottom: activeLink === item.name.toLowerCase() ? '3px solid #FFC107' : 'none' }}
+                  >
+                    {item.name}
+                  </Nav.Link>
+                ))}
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
 
         <Routes>
           <Route path="/" element={<Home />} />
