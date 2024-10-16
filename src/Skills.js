@@ -3,10 +3,11 @@ import React from 'react'
 const Skills = () => {
   return (
     <div className='container mt-5'>
-      <div className='card bg-dark text-warning'>
+      <div className='card bg-dark text-warning'  style={{ maxWidth: '800px', margin: 'auto' }}>
         <div className='card-body'>
           <div className='text-center'>
           <h2>My Skills</h2>
+          <hr />
             <div>
               <ul className='list-unstyled'>
                   <li className='py-2'>JavaScript</li>

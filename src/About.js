@@ -3,7 +3,7 @@ import React from 'react';
 const About = () => {
   return (
     <div className='container mt-5'>
-      <div className='card bg-dark text-warning'>
+      <div className='card bg-dark text-warning'  style={{ maxWidth: '800px', margin: 'auto' }}>
         <div className='card-body'>
           <div className='text-center'>
             <h2>About Me</h2>
