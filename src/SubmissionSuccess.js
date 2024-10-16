@@ -11,7 +11,7 @@ const SubmissionSuccess = () => {
         <div className='card-body'>
           <div className='text-center'>
             <h1 className='text-center'>Thank You, {name}!</h1>
-            <p>Your message has been sent successfully!</p>
+            <p>Your message has been sent.</p>
             <hr/>
             <h4>Submitted Information</h4>
             <hr/>
